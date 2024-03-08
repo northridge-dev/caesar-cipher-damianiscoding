@@ -1,7 +1,11 @@
 #!/usr/bin/env python
+from decrypt import decrypt
 
 
 def encrypt(plaintext, shift=0):
+    #Does decrypt but the opposite
+    plaintext = decrypt(plaintext, -shift)
+
     """
     Uses the Caesar cipher to encrypt a plaintext message.
     :param plaintext: The message to be encrypted
